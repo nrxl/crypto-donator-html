@@ -30,34 +30,60 @@ Cryptonate is a user-friendly donation acceptance system that allows donors to c
 
 ## Getting Started
 
+Certainly, here's an instructional guide for users who want to run your Cryptocurrency Donation Acceptance Platform script from the GitHub repository:
+
+**Running the Cryptocurrency Donation Acceptance Platform:**
+
 1. **Clone the Repository:**
+   - Visit the GitHub repository 
+   - Click the "Code" button and copy the repository's URL.
 
-   ```sh
-   git clone https://github.com/yourusername/cryptonate.git
-   ```
+2. **Terminal/Command Prompt:**
+   - Open a terminal or command prompt on your computer.
 
-2. **Navigate and Install Dependencies:**
+3. **Navigate to the Directory:**
+   - Change to the directory where you want to clone the project.
+   - Use the `cd` command followed by the directory path.
 
-   ```sh
-   cd cryptonate
-   cd backend && npm install
-   cd ../frontend && npm install
-   ```
+4. **Clone the Repository:**
+   - In the terminal, paste the copied repository URL and run the command. This will download the project files:
+     ```
+     git clone <repository-url>
+     ```
 
-3. **Start Servers:**
+5. **Install Dependencies:**
+   - Make sure you have Node.js and npm (Node Package Manager) installed on your computer.
+   - Navigate into the project folder using `cd <project-folder>`.
+   - Install the necessary dependencies by running:
+     ```
+     npm install
+     ```
 
-   ```sh
-   # Backend
-   npm start
+6. **Set Up API Key:**
+   - In the project folder, create a file named `.env` (if not already present).
+   - Inside the `.env` file, add your Coinbase Commerce API key:
+     ```
+     COINBASE_API_KEY=your-api-key
+     ```
 
-   # Frontend
-   npm start
-   ```
+7. **Run the Server:**
+   - Start the server by entering the command:
+     ```
+     node server.js
+     ```
 
-4. **Access the Application:**
+8. **Access the Platform:**
+   - Open a web browser and go to `http://localhost:3000`.
+   - This is where users can interact with the donation platform.
 
-   Open your browser and visit http://localhost:3000.
+9. **Make a Donation:**
+   - On the platform, select a cryptocurrency and enter the donation amount.
+   - Click the "Donate" button.
+   - Watch the progress bar and wait to be redirected to the Coinbase Commerce payment page.
 
+**Note:** The platform's frontend interface should be hosted on a web server or locally using tools like `http-server` for full functionality.
+
+By following these steps, users can easily run the Cryptocurrency Donation Acceptance Platform on their own systems to explore the donation process and contribute to charitable causes.
 ## Usage
 
 1. Visit the application in your browser.
